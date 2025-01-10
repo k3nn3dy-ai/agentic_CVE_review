@@ -1,0 +1,62 @@
+critical_cve_research_task:
+  description: >
+    running the fetch_cve_data_tool with the severity of CRITICAL and 7 days
+
+  expected_output: >
+    Summary of how many vulnerabilities were found.
+  agent: cve_researcher
+
+
+high_cve_research_task:
+  description: >
+    running the fetch_cve_data_tool with the severity of HIGH and 7 days
+
+  expected_output: >
+    Summary of how many vulnerabilities were found.
+  agent: cve_researcher
+
+
+known_exploits_cve_research_task:
+  description: >
+    running the fetch_cve_data_tool with the severity of KNOWN_EXPLOITS and 14 days
+
+  expected_output: >
+    Summary of how many vulnerabilities were found.
+  agent: cve_researcher
+
+extract_critical_cve_task:
+  description: >
+    Extract the critical vulnerabilities from the critical_cve_results_{date}.json file.
+  expected_output: >
+    A list of critical vulnerabilities written up in markdown format without ```. include all useful information.
+  agent: reporting_analyst
+
+extract_high_cve_task:
+  description: >
+    Extract the high vulnerabilities from the high_cve_results_{date}.json file.
+  expected_output: >
+    A list of high vulnerabilities written up in markdown format without ```. include all useful information.
+  agent: reporting_analyst
+
+extract_known_exploits_cve_task:
+  description: >
+    Extract the known exploits vulnerabilities from the known_exploits_cve_results_{date}.json file.
+  expected_output: >
+    A list of known exploits vulnerabilities written up in markdown format without ```. include all useful information.
+  agent: reporting_analyst
+
+reporting_task:
+  description: >
+    Create a comprehensive security advisory based on the CVE information extracted from the critical_cve_results.md, high_cve_results.md, and known_exploits_cve_results.md files. 
+    Include detailed vulnerability descriptions, technical impact analysis,
+    exploitation details, and recommended mitigation strategies.
+  expected_output: >
+    A detailed security advisory report in markdown format (without '```') including:
+    - Executive Summary
+    - Technical Details of Vulnerabilities
+    - Vulnerabilities currently being exploited in the wild
+    - Impact Analysis
+    - Mitigation Recommendations
+    - Timeline of Discoveries
+
+  agent: reporting_analyst

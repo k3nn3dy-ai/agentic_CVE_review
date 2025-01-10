@@ -1,0 +1,21 @@
+[project]
+name = "cve_review"
+version = "0.1.0"
+description = "cve_review using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "colorama>=0.4.6",
+    "crewai[tools]>=0.86.0,<1.0.0",
+]
+
+[project.scripts]
+cve_review = "cve_review.main:run"
+run_crew = "cve_review.main:run"
+train = "cve_review.main:train"
+replay = "cve_review.main:replay"
+test = "cve_review.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
