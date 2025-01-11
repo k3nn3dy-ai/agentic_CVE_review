@@ -15,4 +15,4 @@ def run():
     inputs = {
         'date': datetime.datetime.now().strftime('%Y-%m-%d')
     }
-    CveReview().crew().kickoff(inputs=inputs)
+    CveReview().crew().run(inputs=inputs)
