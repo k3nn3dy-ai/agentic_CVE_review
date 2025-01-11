@@ -44,7 +44,7 @@ pip install uv
 
 2. Clone and install dependencies:
 ```bash
-git clone https://github.com/yourusername/cve-review-tool.git
+git clone https://github.com/k3nn3dy-ai/agentic_CVE_review.git
 cd cve-review-tool
 crewai install
 ```
