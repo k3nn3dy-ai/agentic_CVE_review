@@ -49,12 +49,6 @@ cd cve-review-tool
 crewai install
 ```
 
-3. Configure your environment:
-```bash
-cp .env.example .env
-# Edit .env and add your OPENAI_API_KEY
-```
-
 ## 📊 Usage
 
 Run the analysis:
