@@ -51,6 +51,11 @@ crewai install
 
 ## 📊 Usage
 
+Set api key in .env
+```
+ANTHROPIC_API_KEY=<YOURKEY>
+```
+
 Run the analysis:
 ```bash
 crewai run
