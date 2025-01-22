@@ -33,7 +33,7 @@ An intelligent security analysis platform powered by [crewAI](https://crewai.com
 
 - Python >=3.10 <=3.13
 - [UV](https://docs.astral.sh/uv/) package manager
-- OpenAI API key
+- Anthropic API key for this set up, but can be configured to use the LLM of your choice
 
 ### Installation
 
