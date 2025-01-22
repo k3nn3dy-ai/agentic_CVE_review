@@ -1,4 +1,4 @@
-# CVE Review Tool 🛡️
+# Agentic CVE Review Tool 🛡️
 
 An intelligent security analysis platform powered by [crewAI](https://crewai.com) that automates CVE (Common Vulnerabilities and Exposures) monitoring and analysis. This tool leverages AI agents to process, analyze, and generate comprehensive security reports from the National Vulnerability Database (NVD).
 
